@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Mahasiswa</title>
+</head>
+<body> 
+    <h1>Formulir Pendaftaran Mahasiswa</h1> 
+    <form action="#" method="POST"> 
+        <div class="form-group"> 
+            <label for="nama_id">Nama:</label> 
+            <input type="text" name="nama_input" id="nama_id" placeholder="Input Nama"> 
+        </div> 
+
+        <div class="form-group"> 
+            <label for="email_id">Email:</label> 
+            <input type="email" name="email_input" id="email_id" placeholder="Input Email"> 
+        </div> 
+
+        <div class="form-group"> 
+            <label for="password_id">Password:</label> 
+            <input type="password" name="password_input" id="password_id" placeholder="Input Password"> 
+
+        <fieldset> 
+            <legend>Jenis Kelamin</legend> 
+            <div> 
+                <input type="radio" name="jk_input" id="pria" value="Pria"> 
+                <label for="pria">Pria</label> 
+            </div> 
+            <div> 
+                <input type="radio" name="jk_input" id="wanita" value="Wanita"> 
+                <label for="wanita">Wanita</label> 
+            </div> 
+        </fieldset> 
+
+        <fieldset> 
+            <legend>Hobi</legend> 
+            <div> 
+                <input type="checkbox" name="hobi_input" id="renang" value="Renang"> 
+                <label for="renang">Lari</label> 
+            </div> 
+            <div> 
+                <input type="checkbox" name="hobi_input" id="bersepeda" value="Bersepeda"> 
+                <label for="bersepeda">GYM</label> 
+            </div> 
+            <div> 
+                <input type="checkbox" name="hobi_input" id="memancing" value="Memancing"> 
+                <label for="memancing">Pilates</label> 
+            </div> 
+        </fieldset>
+
+        <div class="form-group"> 
+            <label for="jp_id">Pendidikan terakhir</label> 
+            <select name="jp_input" id="jp_id"> 
+                <option value="" selected>------Pilih------</option> 
+                <option value="D3">Tamat SD</option> 
+                <option value="S1">Tamat SMP</option> 
+                <option value="S2">Tamat SMA/SMK</option> 
+            </select> 
+        </div> 
+        <br>
+        <div class="form-group"> 
+            <br><label for="kritik_saran">Kritik & Saran:</label></div>
+            <textarea id="kritik_saran" name="kritik_saran" rows="5"></textarea> 
+        </div> 
+        <div class="form-actions"> 
+            <button type="button" class="btn-cancel">Cancel</button> 
+            <button type="submit" class="btn-submit">Submit</button> 
+        </div> 
+    </form> 
+</br>
+</body> 
+</html>
