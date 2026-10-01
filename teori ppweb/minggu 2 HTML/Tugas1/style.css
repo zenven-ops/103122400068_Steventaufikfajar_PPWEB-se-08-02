@@ -1,0 +1,290 @@
+/* =========================================
+   1. GLOBAL RESET & FONT
+========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f6; /* Warna latar konten abu-abu sangat terang */
+    color: #444;
+}
+
+/* =========================================
+   2. LAYOUT UTAMA (SIDEBAR & KONTEN)
+========================================= */
+.layout-wrapper {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* --- MENU SIDEBAR (KIRI) --- */
+.sidebar {
+    width: 250px;
+    background: linear-gradient(180deg, #38d39f 0%, #29b887 100%);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 0 15px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+.sidebar h2 {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.sidebar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 15px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding-left: 20px; /* Teks bergeser sedikit saat disentuh kursor */
+}
+
+/* Tombol terakhir di sidebar otomatis jadi kuning */
+.sidebar a:last-of-type {
+    margin-top: auto; /* Mendorong tombol ke ujung bawah layar */
+    background-color: #ffc107;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(255, 193, 7, 0.3);
+}
+
+.sidebar a:last-of-type:hover {
+    background-color: #ffb300;
+    padding-left: 15px;
+    transform: translateY(-2px);
+}
+
+/* --- AREA KANAN (HEADER & ISI HALAMAN) --- */
+.main-wrapper {
+    flex: 1; /* Mengisi sisa ruang di kanan */
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 250px);
+}
+
+/* Header Atas Putih */
+.top-header {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    z-index: 5;
+}
+
+.top-header h1 {
+    color: #29b887;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* Area Konten Utama */
+.content {
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.content h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.content p {
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+/* =========================================
+   3. GAYA FORMULIR KTP
+========================================= */
+form {
+    background: #ffffff;
+    padding: 35px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.04);
+    max-width: 650px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #333;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    background-color: #f8fafc;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus, select:focus {
+    border-color: #29b887;
+    outline: none;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(41, 184, 135, 0.15);
+}
+
+fieldset {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    background-color: #f8fafc;
+}
+
+legend {
+    color: #29b887;
+    font-weight: 600;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+.radio-group {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.btn-submit {
+    background-color: #ffc107;
+    color: #ffffff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
+}
+
+.btn-submit:hover {
+    background-color: #ffb300;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   4. GAYA TABEL DATA MEMBER
+========================================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.04);
+}
+
+th {
+    background-color: #e9f7f2;
+    color: #29b887;
+    padding: 18px 20px;
+    text-align: left;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+td {
+    padding: 16px 20px;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 14px;
+    color: #475569;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover td {
+    background-color: #f8fafc;
+}
+
+/* =========================================
+   5. GAYA MEDIA (GAMBAR & VIDEO)
+========================================= */
+img, video {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+    display: block;
+}
+
+/* =========================================
+   6. RESPONSIVE (UNTUK HP)
+========================================= */
+@media screen and (max-width: 768px) {
+    .layout-wrapper {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    
+    .main-wrapper {
+        width: 100%;
+    }
+    
+    .top-header {
+        padding: 15px 20px;
+        text-align: center;
+    }
+    
+    .top-header h1 {
+        font-size: 22px;
+    }
+    
+    .content {
+        padding: 20px;
+    }
+    
+    form {
+        padding: 25px 20px;
+    }
+    
+    /* Supaya tabel bisa digeser ke kanan-kiri di HP */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}

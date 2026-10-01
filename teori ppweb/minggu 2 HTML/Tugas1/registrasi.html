@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran KTP</title>
+    <!-- Memanggil file CSS untuk desain layout dan form -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="layout-wrapper">
+        
+        <!-- BAGIAN 1: SIDEBAR KIRI -->
+        <div class="sidebar">
+            <h2>Menu Navigasi</h2>
+            <a href="index.html"> Beranda </a>
+            <a href="registrasi.html"> Pendaftaran </a>
+            <a href="galeri.html"> Contoh KTP </a>
+            <a href="member.html"> Data Member </a>
+            <a href="bantuan.html"> Bantuan </a>
+        </div>
+
+        <!-- BAGIAN 2: AREA KANAN (HEADER + KONTEN) -->
+        <div class="main-wrapper">
+            
+            <!-- HEADER ATAS -->
+            <div class="top-header">
+                <h1>Sistem Pendaftaran KTP Online</h1>
+            </div>
+
+            <!-- KONTEN UTAMA HALAMAN -->
+            <div class="content">
+                <h2>Formulir Pendaftaran Pembuatan KTP</h2>
+                <p>Silakan isi biodata di bawah ini dengan lengkap dan benar sesuai dengan dokumen asli Anda.</p>
+
+                <!-- FORMULIR PENDAFTARAN -->
+                <form action="#" method="POST"> 
+                    <div class="form-group"> 
+                        <label for="nama_id">Nama Lengkap:</label> 
+                        <input type="text" name="nama_input" id="nama_id" placeholder="Contoh: Budi Santoso"> 
+                    </div> 
+
+                    <fieldset> 
+                        <legend>Jenis Kelamin</legend> 
+                        <div class="radio-group"> 
+                            <input type="radio" name="jk_input" id="pria" value="Pria"> 
+                            <label for="pria">Pria</label> 
+                        </div> 
+                        <div class="radio-group"> 
+                            <input type="radio" name="jk_input" id="wanita" value="Wanita"> 
+                            <label for="wanita">Wanita</label> 
+                        </div> 
+                    </fieldset> 
+
+                    <div class="form-group"> 
+                        <label for="golDarah_id">Golongan Darah:</label> 
+                        <input type="text" name="golDarah_input" id="golDarah_id" placeholder="Contoh: A, B, AB, atau O"> 
+                    </div> 
+
+                    <div class="form-group"> 
+                        <label for="rtrw_id">RT/RW:</label> 
+                        <input type="text" name="rtrw_input" id="rtrw_id" placeholder="Contoh: 001/005"> 
+                    </div> 
+
+                    <div class="form-group"> 
+                        <label for="kel_desa_id">Kelurahan/Desa:</label> 
+                        <input type="text" name="kel_desa_input" id="kel_desa_id" placeholder="Masukkan Kelurahan/Desa"> 
+                    </div> 
+
+                    <div class="form-group"> 
+                        <label for="kecamatan_id">Kecamatan:</label> 
+                        <input type="text" name="kecamatan_input" id="kecamatan_id" placeholder="Masukkan Kecamatan"> 
+                    </div> 
+
+                    <div class="form-group"> 
+                        <label for="agama_id">Agama:</label> 
+                        <input type="text" name="agama_input" id="agama_id" placeholder="Masukkan Agama"> 
+                    </div> 
+
+                    <div class="form-group"> 
+                        <label for="statusperkawinan_id">Status Perkawinan:</label> 
+                        <input type="text" name="statusperkawinan_input" id="statusperkawinan_id" placeholder="Belum Kawin / Kawin / Cerai"> 
+                    </div> 
+
+                    <div class="form-group"> 
+                        <label for="pekerjaan_id">Pekerjaan:</label> 
+                        <input type="text" name="pekerjaan_input" id="pekerjaan_id" placeholder="Masukkan Pekerjaan"> 
+                    </div> 
+
+                    <div class="form-group"> 
+                        <label for="jp_id">Kewarganegaraan:</label> 
+                        <select name="jp_input" id="jp_id"> 
+                            <option value="" selected>------Pilih------</option> 
+                            <option value="wni">WNI</option> 
+                            <option value="wna">WNA</option> 
+                        </select> 
+                    </div>  
+
+                    <div class="form-actions"> 
+                        <button type="submit" class="btn-submit">Submit Pendaftaran</button> 
+                    </div> 
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
