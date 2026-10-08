@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Perlengkapan Kuliah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+    <div class="text-center mb-8 pt-8" id="beranda">
+        <h1 class="font-bold text-3xl">Toko Kampus</h1>
+        <p class="text-gray-600 mt-2">Perlengkapan kuliah untuk kebutuhan sehari-hari</p>
+        <nav class="flex justify-center gap-6 mt-4">
+            <a href="#beranda" class="text-blue-600 hover:underline">Beranda</a>
+            <a href="#produk" class="text-blue-600 hover:underline">Produk</a>
+            <a href="#kontak" class="text-blue-600 hover:underline">Kontak</a>
+        </nav>
+    </div>
+
+    <div id="produk" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
+        <div class="bg-white p-4 rounded-lg shadow-md flex flex-col">
+            <img src="assets/buku.jpg" alt="Buku Catatan" class="w-full h-48 object-contain rounded mb-4 bg-gray-100">
+            <h2 class="font-bold text-lg">Buku Catatan</h2>
+            <p class="text-gray-500 text-sm flex-grow mb-2">Buku untuk mencatat materi kuliah.</p>
+            <p class="font-semibold text-blue-700 mb-4">Rp15.000</p>
+            <a href="#detail-buku" class="block w-full text-center bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-800">
+                Lihat Detail
+            </a>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow-md flex flex-col">
+            <img src="assets/pulpen.jpg" alt="Pulpen" class="w-full h-48 object-contain rounded mb-4 bg-gray-100">
+            <h2 class="font-bold text-lg">Pulpen</h2>
+            <p class="text-gray-500 text-sm flex-grow mb-2">Pulpen untuk menulis tugas dan catatan.</p>
+            <p class="font-semibold text-blue-700 mb-4">Rp5.000</p>
+            <a href="#detail-pulpen" class="block w-full text-center bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-800">
+                Lihat Detail
+            </a>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow-md flex flex-col">
+            <img src="assets/tumbler.jpg" alt="Tumbler" class="w-full h-48 object-contain rounded mb-4 bg-gray-100">
+            <h2 class="font-bold text-lg">Tumbler</h2>
+            <p class="text-gray-500 text-sm flex-grow mb-2">Botol minum untuk dibawa ke kampus.</p>
+            <p class="font-semibold text-blue-700 mb-4">Rp35.000</p>
+            <a href="#detail-tumbler" class="block w-full text-center bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-800">
+                Lihat Detail
+            </a>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow-md flex flex-col">
+            <img src="assets/tas.jpg" alt="Tas Kuliah" class="w-full h-48 object-contain rounded mb-4 bg-gray-100">
+            <h2 class="font-bold text-lg">Tas Kuliah</h2>
+            <p class="text-gray-500 text-sm flex-grow mb-2">Tas untuk menyimpan buku dan alat tulis.</p>
+            <p class="font-semibold text-blue-700 mb-4">Rp120.000</p>
+            <a href="#detail-tas" class="block w-full text-center bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-800">
+                Lihat Detail
+            </a>
+        </div>
+    </div>
+
+    <div class="mt-12 space-y-6 px-4">
+        <h2 class="text-2xl font-bold text-center mb-6">Detail Produk</h2>
+
+        <div id="detail-buku" class="bg-gray-100 p-6 rounded-lg border">
+            <h3 class="font-bold text-xl">Buku Catatan</h3>
+            <p class="text-gray-700 mt-2">Bahan: Kertas HVS 80gsm | Ukuran: A5 (14.8 x 21 cm)</p>
+        </div>
+
+        <div id="detail-pulpen" class="bg-gray-100 p-6 rounded-lg border">
+            <h3 class="font-bold text-xl">Pulpen</h3>
+            <p class="text-gray-700 mt-2">Bahan: Plastik dengan tinta gel hitam | Ukuran: Ujung 0.5mm</p>
+        </div>
+
+        <div id="detail-tumbler" class="bg-gray-100 p-6 rounded-lg border">
+            <h3 class="font-bold text-xl">Tumbler</h3>
+            <p class="text-gray-700 mt-2">Bahan: Stainless steel | Kapasitas: 500ml</p>
+        </div>
+
+        <div id="detail-tas" class="bg-gray-100 p-6 rounded-lg border">
+            <h3 class="font-bold text-xl">Tas Kuliah</h3>
+            <p class="text-gray-700 mt-2">Bahan: Kanvas tebal | Ukuran: 40 x 30 x 12 cm</p>
+        </div>
+    </div>
+
+    <div id="kontak" class="mt-16 bg-blue-50 p-8 rounded-lg text-center mx-4">
+        <h2 class="text-2xl font-bold mb-2">Kontak Kami</h2>
+        <p class="text-lg font-semibold text-gray-800">Toko Kampus</p>
+        <a href="mailto:toko@example.com" class="text-blue-600 hover:underline">toko@example.com</a>
+    </div>
+
+</body>
+</html>
