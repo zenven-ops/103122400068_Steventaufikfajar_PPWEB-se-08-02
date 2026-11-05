@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Soal 01 - Portal Informasi Praktikum</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; line-height: 1.5; }
+        .box { border: 1px solid #ccc; padding: 15px; margin-bottom: 15px; border-radius: 5px; }
+        pre { background: #f4f4f4; padding: 10px; border-left: 3px solid #007bff; }
+        .error { color: red; font-weight: bold; }
+        .loading { color: orange; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <h1>Portal Informasi Praktikum</h1>
+
+    <div class="box">
+        <h3>1. Status & Catatan Praktikan</h3>
+        <p><strong>Waktu Halaman Dibuka:</strong> <span id="waktu-awal"></span></p>
+        <p><strong>Jumlah Hitungan:</strong> <span id="angka-hitungan">0</span></p>
+        <button id="btn-hitung">Tambah Hitungan</button>
+        <br><br>
+        <label for="catatan">Catatan Praktikan:</label><br>
+        <textarea id="catatan" rows="3" cols="40" placeholder="Tulis catatan di sini..."></textarea>
+    </div>
+
+    <div class="box">
+        <h3>2. Pengumuman Praktikum (XHR)</h3>
+        <button id="btn-pengumuman">Muat Pengumuman</button>
+        <div id="status-xhr"></div>
+        <pre id="isi-pengumuman">Pengumuman belum dimuat.</pre>
+    </div>
+
+    <div class="box">
+        <h3>3. Direktori Peserta (Fetch API)</h3>
+        <label for="sumber-api">Pilih Sumber Data:</label>
+        <select id="sumber-api">
+            <option value="mock">Mock Lokal (/api/users?delay=1500)</option>
+            <option value="external">JSONPlaceholder (External)</option>
+        </select>
+        <button id="btn-peserta">Ambil Peserta</button>
+
+        <div id="status-fetch"></div>
+        <div id="info-direktori"></div>
+        <ul id="daftar-peserta"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
